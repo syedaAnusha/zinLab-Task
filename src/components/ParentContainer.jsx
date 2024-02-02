@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "@/styles/ParentContainer.module.css";
+import styles from "@/styles/parentContainer.module.css";
+import Header from "./Header";
 
 const ParentContainer = () => {
   return (
     <div className={styles.parent__container}>
-      <h1>Hello world</h1>
+      <Header />
     </div>
   );
 };
