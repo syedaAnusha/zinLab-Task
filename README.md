@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# zinLabTech-Task
 
-## Getting Started
+# zinTools Landing-Page
 
-First, run the development server:
+This repository is built only for showcasing frontend tech skills, focusing solely on Next.js and CSS.
+
+# Tailwind CSS - Next.js Pages Router example in JavaScript
+
+## How to use
+
+Using Tailwind with Next.js [Follow this Link](https://tailwindcss.com/docs/guides/nextjs):
+
+<!-- #default-branch-Main -->
+
+Install it and run:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The idea behind the example
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Note:** This example is set up to use the Next.js Pages Router.
+As of Next.js 13.4, the newer App Router pattern is stable.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
+It includes `Tailwind CSS` and its peer dependencies. If you prefer, you can [use styled-components instead](https://styled-components.com/docs).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## What's next?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- #default-branch-switch -->
 
-## Learn More
+# Links to be Followed
 
-To learn more about Next.js, take a look at the following resources:
+[For Header](https://similarwatch.com/)
+[For Navbar](https://elements.envato.com/)
+[For Carousel](https://www.hipdf.com/all-tools)
+[For Footer](https://similarwatch.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Task Description
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In the provided images or (links), we have marked the web links where you can view or copy components. Please ensure that every component you create is an exact match, and you should only use Next.js for this task. Custom code is the only acceptable approach; do not rely on any frameworks (except for Tailwind CSS and any library for cards/slider components).
 
-## Deploy on Vercel
+Feel free to submit your Vercel link in this conversation once you've completed the task. If you have any questions or need further clarification, please don't hesitate to reach out to us. We're here to assist you throughout the process.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You now have a working example project.
