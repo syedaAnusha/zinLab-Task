@@ -51,7 +51,68 @@ const Aboutus = () => {
             </svg>
           </span>
         </div>
-        <div className={styles.aboutus}></div>
+        <div className={styles.aboutus}>
+          <section className={`${styles.section} ${styles.section__one}`}>
+            <article className={styles.article}>
+              <h4 className={styles.heading__4}>Internal Links</h4>
+              <ul className={styles.list}>
+                <li className={styles.link}>Documentaries</li>
+                <li className={styles.link}>Themes</li>
+                <li className={styles.link}>Chrome casts</li>
+              </ul>
+            </article>
+          </section>
+
+          <section className={styles.section}>
+            <article className={styles.article}>
+              <h4 className={styles.heading__4}>Enterprise</h4>
+              <ul className={styles.list}>
+                <li className={styles.link}>Download Chrome Browser</li>
+                <li className={styles.link}>Chrome Browser for Enterprise</li>
+                <li className={styles.link}>Chrome Browser for Devices</li>
+                <li className={styles.link}>ChromeOS</li>
+                <li className={styles.link}>Google Cloud</li>
+                <li className={styles.link}>Google Workspace</li>
+              </ul>
+            </article>
+          </section>
+
+          <section className={`${styles.section} ${styles.section__one}`}>
+            <article className={styles.article}>
+              <h4 className={styles.heading__4}>Internal Links</h4>
+              <ul className={styles.list}>
+                <li className={styles.link}>Documentaries</li>
+                <li className={styles.link}>Themes</li>
+                <li className={styles.link}>Chrome casts</li>
+              </ul>
+            </article>
+          </section>
+
+          <section className={styles.section}>
+            <article className={styles.article}>
+              <h4 className={styles.heading__4}>Enterprise</h4>
+              <ul className={styles.list}>
+                <li className={styles.link}>Download Chrome Browser</li>
+                <li className={styles.link}>Chrome Browser for Enterprise</li>
+                <li className={styles.link}>Chrome Browser for Devices</li>
+                <li className={styles.link}>ChromeOS</li>
+                <li className={styles.link}>Google Cloud</li>
+                <li className={styles.link}>Google Workspace</li>
+              </ul>
+            </article>
+          </section>
+
+          <section className={`${styles.section} ${styles.section__one}`}>
+            <article className={styles.article}>
+              <h4 className={styles.heading__4}>Internal Links</h4>
+              <ul className={styles.list}>
+                <li className={styles.link}>Documentaries</li>
+                <li className={styles.link}>Themes</li>
+                <li className={styles.link}>Chrome casts</li>
+              </ul>
+            </article>
+          </section>
+        </div>
       </div>
     </>
   );

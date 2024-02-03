@@ -1,10 +1,11 @@
 .container {
-  padding: 0.75rem 0.75rem;
-  margin-top: 2rem;
+  padding: 0.75rem 0rem;
+  margin-top: 88rem;
   /* border: 1px solid black; */
 
   display: flex;
   flex-direction: column;
+  background-color: #f1f3f4;
 }
 .social__sites {
   display: flex;
@@ -12,9 +13,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  border-bottom: 1px solid transparent;
-  border-bottom-color: #d3d3d3;
-  padding: 1.1rem 1.8rem;
+  padding: 1.1rem 1rem;
+  padding-bottom: 0rem;
 }
 .follow__tag {
   margin-right: 2rem;
@@ -30,4 +30,54 @@
 #facebook:hover {
   fill: #000;
   cursor: pointer;
+}
+.aboutus {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin-top: 2rem;
+  margin-inline: 0 1rem;
+
+  padding: 1.1rem 1rem;
+  padding-block: 2.5rem 2.5rem;
+
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top-color: #e6e6e6;
+  border-bottom-color: #e6e6e6;
+}
+.section + .section {
+  margin-left: 2rem;
+}
+.section__one {
+  margin-right: 7.5rem;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.heading__4 {
+  font-size: 1rem;
+  /* line-height: 1.5rem; */
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.list {
+  margin-top: 1.2rem;
+}
+.link {
+  /* line-height: 1rem; */
+  color: #4b4b4b;
+  white-space: nowrap;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.link:hover {
+  color: black;
+  cursor: pointer;
+}
+.link + .link {
+  margin-top: 1.3rem;
 }

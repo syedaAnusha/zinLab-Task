@@ -43,8 +43,8 @@ const Header = () => {
               <h5 className={styles.signUp}>Sign up</h5>
             </section>
           </div>
-          <NavBar />
         </div>
+        <NavBar />
       </header>
     </>
   );

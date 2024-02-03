@@ -26,3 +26,7 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+ul,
+li {
+  list-style-type: none;
+}
