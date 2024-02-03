@@ -1,0 +1,33 @@
+.container {
+  padding: 0.75rem 0.75rem;
+  margin-top: 2rem;
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+}
+.social__sites {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-bottom: 1px solid transparent;
+  border-bottom-color: #d3d3d3;
+  padding: 1.1rem 1.8rem;
+}
+.follow__tag {
+  margin-right: 2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #333;
+}
+.social__links + .social__links {
+  margin-left: 2rem;
+}
+#youtube:hover,
+#twitter:hover,
+#facebook:hover {
+  fill: #000;
+  cursor: pointer;
+}
