@@ -1,12 +1,11 @@
 .header {
   position: relative;
-  z-index: 1;
-  /* width: 100vw; */
 }
 .main__container {
   display: flex;
   flex-direction: column;
-  border: 2px solid purple;
+  margin-bottom: 5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .sub__container {
   display: flex;
