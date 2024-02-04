@@ -1,0 +1,34 @@
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #4b4b4b;
+  padding: 1.5rem 1.6rem;
+  /* width: 100vw; */
+  border: 1px solid black;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list_item {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  /* width: 100vw; */
+}
+.list_item + .list_item {
+  margin-top: 1rem;
+}
+
+.link__one {
+  padding: -1rem -1rem;
+  background-color: #dedede;
+  width: 100vw;
+}
+.link__one:hover {
+  cursor: pointer;
+  color: #000;
+}
