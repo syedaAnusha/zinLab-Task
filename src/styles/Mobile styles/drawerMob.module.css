@@ -1,0 +1,7 @@
+.menu__hamburger {
+  display: flex;
+  justify-content: flex-start;
+  /* max-width: 10vw; */
+  /* min-width: 20vw; */
+  width: 100%;
+}

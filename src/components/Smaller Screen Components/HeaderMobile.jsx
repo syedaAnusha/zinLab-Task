@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Mobile styles/headerMob.module.css";
+import DrawerMobile from "./DrawerMobile";
 
 const HeaderMobile = () => {
   return (
@@ -8,15 +9,7 @@ const HeaderMobile = () => {
       <header className={styles.header}>
         <div className={styles.container}>
           <section className={styles.hero__text}>
-            <svg
-              className={styles.menu__hamburger}
-              xmlns="http://www.w3.org/2000/svg"
-              height="40"
-              viewBox="0 -960 960 960"
-              width="40"
-            >
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
+            <DrawerMobile />
             <section className={styles.logo__title}>
               <Image
                 src="/zintools-logo.jpg"
