@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/appbarMob.module.css";
+import styles from "@/styles/Mobile styles/appbarMob.module.css";
 
 const AppBarMobile = () => {
   return (

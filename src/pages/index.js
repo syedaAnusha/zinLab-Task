@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import ParentContainer from "../components/ParentContainer";
+import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
+const ParentContainer = dynamic(() => import("../components/ParentContainer"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
