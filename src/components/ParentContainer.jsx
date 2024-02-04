@@ -7,11 +7,10 @@ import AppBarMobile from "./Smaller Screen Components/AppBarMobile";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const ParentContainer = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   return (
     <div className={styles.parent__container}>
-      <AppBar />
-      {/* <AppBarMobile /> */}
+      {width >= 1024 ? <AppBar /> : <AppBarMobile />}
       <Aboutus />
       <Footer />
     </div>

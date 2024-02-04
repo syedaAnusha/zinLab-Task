@@ -1,8 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import dynamic from "next/dynamic";
-
 const inter = Inter({ subsets: ["latin"] });
+
+//** These below lines of code disabled the no-SSR rendering, to prevent the react-hydration error*/
+import dynamic from "next/dynamic";
 const ParentContainer = dynamic(() => import("../components/ParentContainer"), {
   ssr: false,
 });

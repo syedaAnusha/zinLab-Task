@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  gap: 2rem;
+  width: 100vw;
+}
+.hero__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+.menu__hamburger {
+  display: flex;
+  justify-content: flex-start;
+  /* max-width: 10vw; */
+  /* min-width: 20vw; */
+  width: 100%;
+}
+.logo__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.zintoolsLogo {
+  width: 35%;
+  height: 35%;
+  /* min-width: 1vw; */
+  /* min-height: 1vh; */
+}
+.title {
+  width: 50%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.svg__tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
