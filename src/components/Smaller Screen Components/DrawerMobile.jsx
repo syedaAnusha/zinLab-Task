@@ -22,12 +22,12 @@ const DrawerMobile = () => {
       </svg>
       <Drawer
         open={isOpen}
-        onClose={toggleDrawer}
+        // onClose={toggleDrawer}
         direction="left"
-        size="100vw"
+        // size="100vw"
         className="bla bla bla"
       >
-        <div>Hello World</div>
+        <div onClick={toggleDrawer}>Hello World</div>
       </Drawer>
     </>
   );
