@@ -1,34 +1,43 @@
 .main__container {
   display: flex;
+  flex-direction: column;
+  color: #4b4b4b;
+  padding-block: 0.8rem;
+  border: 1px solid black;
+  line-height: 1.75rem;
+}
+.wishlist {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #4b4b4b;
-  padding: 1.5rem 1.6rem;
-  /* width: 100vw; */
-  border: 1px solid black;
+  padding: 0.8rem 1.6rem;
 }
+.wishlist:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #dedede;
+}
+.txt_submenu {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
 .list {
   display: flex;
   flex-direction: column;
+  padding-block: 0.4rem;
 }
 .list_item {
   font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 400;
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-  /* width: 100vw; */
+  padding: 0.8rem 1.6rem;
 }
 .list_item + .list_item {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 }
 
-.link__one {
-  padding: -1rem -1rem;
-  background-color: #dedede;
-  width: 100vw;
-}
-.link__one:hover {
+.list_item:hover {
   cursor: pointer;
   color: #000;
+  background-color: #dedede;
 }
