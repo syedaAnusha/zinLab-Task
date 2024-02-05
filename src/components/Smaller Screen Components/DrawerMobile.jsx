@@ -1,4 +1,5 @@
 import React from "react";
+
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import styles from "@/styles/Mobile styles/drawerMob.module.css";
@@ -9,6 +10,7 @@ const DrawerMobile = () => {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
+
   return (
     <>
       <svg
@@ -24,13 +26,13 @@ const DrawerMobile = () => {
       </svg>
       <Drawer
         open={isOpen}
-        // onClose={toggleDrawer}
+        onClose={toggleDrawer}
         direction="left"
         size="100vw"
         className="bla bla bla"
+        lockBackgroundScroll={true}
       >
         <MobileMenu showMobileMenu={toggleDrawer} />
-        {/* <div onClick={toggleDrawer}>Hello World</div> */}
       </Drawer>
     </>
   );
