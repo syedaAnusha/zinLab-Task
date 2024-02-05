@@ -1,11 +1,17 @@
 .container {
-  padding: 1rem 1.2rem;
+  /* padding: 1rem 1.2rem; */
+  color: #484848;
+  padding-block: 0.9rem;
+
+  /* overscroll-behavior-y: auto; */
 }
 .sub__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow-y: visible;
+  padding-inline: 1rem 1.2rem;
 }
 .logo__title {
   display: flex;
@@ -29,10 +35,31 @@
   flex-direction: row;
   align-items: center;
   margin-top: 1rem;
+  padding-inline: 1rem 1.2rem;
 }
 .text__category {
   font-size: 0.9rem;
   font-weight: 500;
   margin-left: 0.5rem;
   margin-top: 0.24rem;
+}
+
+.list {
+  margin-top: 1rem;
+  /* padding-inline: 1rem 1.2rem; */
+}
+.list__item {
+  font-size: 0.8rem;
+  padding-block: 0.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+  border-bottom-color: #e5e7eb;
+  padding-inline: 1rem 1.2rem;
+}
+.list__item:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #dedede;
+
+  /* margin-top: 0.4rem; */
 }

@@ -46,17 +46,17 @@ const ShowCategories = () => {
         </section>
         <div>
           <ul className={styles.list}>
-            <li>Stock Video</li>
-            <li> Video Templates</li>
-            <li>Music </li>
-            <li>Sound Effects</li>
-            <li>Graphic Templates</li>
-            <li>Graphics</li>
-            <li>Presentation Templates</li>
-            <li>Photos</li>
-            <li>Fonts</li>
-            <li>Add-ons</li>
-            <li>More</li>
+            <li className={styles.list__item}>Stock Video</li>
+            <li className={styles.list__item}> Video Templates</li>
+            <li className={styles.list__item}>Music </li>
+            <li className={styles.list__item}>Sound Effects</li>
+            <li className={styles.list__item}>Graphic Templates</li>
+            <li className={styles.list__item}>Graphics</li>
+            <li className={styles.list__item}>Presentation Templates</li>
+            <li className={styles.list__item}>Photos</li>
+            <li className={styles.list__item}>Fonts</li>
+            <li className={styles.list__item}>Add-ons</li>
+            <li className={styles.list__item}>More</li>
           </ul>
         </div>
       </div>
