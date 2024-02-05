@@ -1,0 +1,38 @@
+.container {
+  padding: 1rem 1.2rem;
+}
+.sub__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.zintoolsLogo {
+  width: 25%;
+  height: 25%;
+  /* min-width: 1vw; */
+  /* min-height: 1vh; */
+}
+.title {
+  width: 50%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+.heading__category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+.text__category {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-top: 0.24rem;
+}

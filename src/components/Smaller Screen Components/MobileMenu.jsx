@@ -4,6 +4,8 @@ import styles from "@/styles/Mobile styles/mobilemenu.module.css";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 
+import ShowCategories from "./ShowCategories";
+
 const MobileMenu = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
@@ -57,7 +59,7 @@ const MobileMenu = (props) => {
           className="bla bla bla"
           lockBackgroundScroll={true}
         >
-          <div onClick={toggleDrawer}>hello woorld</div>
+          <ShowCategories />
         </Drawer>
         <ul className={styles.list}>
           <li className={styles.list_item}>Liscence</li>
