@@ -5,3 +5,6 @@
   /* min-width: 20vw; */
   width: 100%;
 }
+.menu__hamburger:hover {
+  cursor: pointer;
+}

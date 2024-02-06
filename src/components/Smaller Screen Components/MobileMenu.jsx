@@ -5,20 +5,20 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 
 import ShowCategories from "./ShowCategories";
-import HeaderMobile from "./HeaderMobile";
 
-const MobileMenu = (props) => {
+const MobileMenu = ({ showMobileMenu }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
+
   return (
     <>
       <div className={styles.main__container}>
         <div className={styles.wishlist}>
           <p className={styles.txt_submenu}>Wishlist</p>
           <svg
-            onClick={props.showMobileMenu}
+            onClick={showMobileMenu}
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="19"
@@ -60,7 +60,7 @@ const MobileMenu = (props) => {
           className="bla bla bla"
           lockBackgroundScroll={true}
         >
-          <ShowCategories goBack={toggleDrawer} mainMenu={toggleDrawer} />
+          <ShowCategories goBack={toggleDrawer} />
         </Drawer>
         <ul className={styles.list}>
           <li className={styles.list_item}>Liscence</li>

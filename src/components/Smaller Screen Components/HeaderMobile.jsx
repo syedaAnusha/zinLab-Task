@@ -2,14 +2,8 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Mobile styles/headerMob.module.css";
 import DrawerMobile from "./DrawerMobile";
-// import ShowCategories from "./ShowCategories";
 
-const HeaderMobile = () => {
-  // const [data, setData] = React.useState("");
-
-  // const childToParent = (childdata) => {
-  //   setData(childdata);
-  // };
+const HeaderMobile = ({ navigateToHeaderMobile }) => {
   return (
     <>
       <header className={styles.header}>
@@ -42,7 +36,6 @@ const HeaderMobile = () => {
             </div>
           </section>
         </div>
-        {/* <ShowCategories childToParent={childToParent} /> */}
       </header>
     </>
   );

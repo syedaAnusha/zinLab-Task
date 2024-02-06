@@ -10,7 +10,9 @@ const DrawerMobile = () => {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
-
+  const toggleToParent = () => {
+    toggleDrawer();
+  };
   return (
     <>
       <svg
