@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "@/styles/Mobile styles/showcategories.module.css";
 import Image from "next/image";
+import NavigationContext from "./Context/NavigationContext";
 
 const ShowCategories = ({ goBack }) => {
+  const { navigateToHeaderMobile } = useContext(NavigationContext);
+
+  const handleGoBack = () => {
+    navigateToHeaderMobile();
+  };
   return (
     <>
       <div className={styles.container}>
@@ -20,7 +26,7 @@ const ShowCategories = ({ goBack }) => {
           </section>
           <svg
             //**Going back to main-parent components : HeaderMobile */
-
+            onClick={handleGoBack}
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="19"
