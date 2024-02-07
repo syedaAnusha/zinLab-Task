@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Mobile styles/headerMob.module.css";
 import DrawerMobile from "./DrawerMobile";
-// import NavigationContext from "./Context/NavigationContext";
 
 const HeaderMobile = () => {
   return (

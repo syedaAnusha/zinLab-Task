@@ -1,22 +1,14 @@
 import React from "react";
 import styles from "@/styles/Mobile styles/showcategories.module.css";
 import Image from "next/image";
-// import NavigationContext from "./Context/NavigationContext";
 
 const ShowCategories = ({ goBack, parentComp }) => {
-  // const [isOpen, setIsOpen] = React.useState(false);
-  // const navigateToHeaderMobile = () => {
-  //   setIsOpen((prevState) => !prevState);
-  //   console.log("Navigating 2 back to HeaderMobile...");
-  //   // Add your navigation logic here
-  // };
   const handleClick = () => {
-    parentComp(true);
+    parentComp();
   };
 
   return (
     <>
-      {/* <NavigationContext.Provider value={{ navigateToHeaderMobile }}> */}
       <div className={styles.container}>
         <div className={styles.sub__container}>
           <section className={styles.logo__title}>
@@ -32,7 +24,7 @@ const ShowCategories = ({ goBack, parentComp }) => {
           </section>
           <svg
             //**Going back to main-parent components : HeaderMobile */
-            // onClick={}
+            onClick={handleClick}
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="19"
@@ -40,7 +32,6 @@ const ShowCategories = ({ goBack, parentComp }) => {
             viewBox="0 0 48 48"
             fill="#CCCCCC"
             className={styles.cross_icon}
-            onClick={handleClick}
           >
             <path d="m28.39 24 18.7-18.7A3.09 3.09 0 0 0 48 3.1a3 3 0 0 0-.91-2.19A3 3 0 0 0 44.9 0a3.09 3.09 0 0 0-2.2.91L24 19.61 5.3.91A3.09 3.09 0 0 0 3.1 0 3 3 0 0 0 .91.91 3 3 0 0 0 0 3.1a3.09 3.09 0 0 0 .91 2.2L19.61 24 .91 42.7A3.09 3.09 0 0 0 0 44.9a3 3 0 0 0 .91 2.19A3 3 0 0 0 3.1 48a3.09 3.09 0 0 0 2.2-.91L24 28.39l18.7 18.7a3.09 3.09 0 0 0 2.2.91 3.11 3.11 0 0 0 3.1-3.1 3.09 3.09 0 0 0-.91-2.2z"></path>
           </svg>
@@ -78,7 +69,6 @@ const ShowCategories = ({ goBack, parentComp }) => {
           </ul>
         </div>
       </div>
-      {/* </NavigationContext.Provider> */}
     </>
   );
 };

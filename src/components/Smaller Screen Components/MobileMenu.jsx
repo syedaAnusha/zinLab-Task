@@ -12,8 +12,8 @@ const MobileMenu = ({ showMobileMenu }) => {
     setIsOpen((prevState) => !prevState); //when true
   };
   const goBackToParent = () => {
-    setIsOpen((prevState) => !prevState); //again false
-    console.log(); //when false
+    toggleDrawer();
+    console.log("closed");
   };
 
   return (
