@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import styles from "@/styles/Mobile styles/headerMob.module.css";
 import DrawerMobile from "./DrawerMobile";
+// import NavigationContext from "./Context/NavigationContext";
 
-const HeaderMobile = ({ navigateToHeaderMobile }) => {
+const HeaderMobile = () => {
   return (
     <>
       <header className={styles.header}>
         <div className={styles.container}>
           <section className={styles.hero__text}>
-            <DrawerMobile />
+            <DrawerMobile close={true} />
             <section className={styles.logo__title}>
               <Image
                 src="/zintools-logo.jpg"

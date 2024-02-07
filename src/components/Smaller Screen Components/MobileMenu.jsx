@@ -9,7 +9,11 @@ import ShowCategories from "./ShowCategories";
 const MobileMenu = ({ showMobileMenu }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
+    setIsOpen((prevState) => !prevState); //when true
+  };
+  const goBackToParent = () => {
+    setIsOpen((prevState) => !prevState); //again false
+    console.log(); //when false
   };
 
   return (
@@ -18,13 +22,13 @@ const MobileMenu = ({ showMobileMenu }) => {
         <div className={styles.wishlist}>
           <p className={styles.txt_submenu}>Wishlist</p>
           <svg
-            onClick={showMobileMenu}
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="19"
             data-name="Layer 1"
             viewBox="0 0 48 48"
             fill="#CCCCCC"
+            onClick={showMobileMenu}
           >
             <path d="m28.39 24 18.7-18.7A3.09 3.09 0 0 0 48 3.1a3 3 0 0 0-.91-2.19A3 3 0 0 0 44.9 0a3.09 3.09 0 0 0-2.2.91L24 19.61 5.3.91A3.09 3.09 0 0 0 3.1 0 3 3 0 0 0 .91.91 3 3 0 0 0 0 3.1a3.09 3.09 0 0 0 .91 2.2L19.61 24 .91 42.7A3.09 3.09 0 0 0 0 44.9a3 3 0 0 0 .91 2.19A3 3 0 0 0 3.1 48a3.09 3.09 0 0 0 2.2-.91L24 28.39l18.7 18.7a3.09 3.09 0 0 0 2.2.91 3.11 3.11 0 0 0 3.1-3.1 3.09 3.09 0 0 0-.91-2.2z"></path>
           </svg>
@@ -60,7 +64,7 @@ const MobileMenu = ({ showMobileMenu }) => {
           className="bla bla bla"
           lockBackgroundScroll={true}
         >
-          <ShowCategories goBack={toggleDrawer} />
+          <ShowCategories goBack={toggleDrawer} parentComp={goBackToParent} />
         </Drawer>
         <ul className={styles.list}>
           <li className={styles.list_item}>Liscence</li>
