@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  column-gap: 2rem;
 
   margin-top: 2rem;
   margin-inline: 0 1rem;
@@ -52,14 +53,21 @@
   .aboutus {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 1rem;
+    gap: 1rem;
+    row-gap: 2.3rem;
+    column-gap: 2rem;
+  }
+  .section {
+    font-size: 0.885rem;
   }
 }
-/* .section + .section {
-  margin-left: 2rem;
-} */
 .section__one {
   margin-right: 7.5rem;
+}
+@media (max-width: 1024px) {
+  .section__one {
+    margin-right: 7rem;
+  }
 }
 .article {
   display: flex;
@@ -79,8 +87,18 @@
   /* line-height: 1rem; */
   color: #4b4b4b;
   white-space: nowrap;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  /* padding-bottom: 0rem; */
+  /* padding-top: 0rem; */
+}
+/**Below 1024px, links **/
+@media (max-width: 1024px) {
+  .link {
+    /* line-height: 1rem; */
+    color: #4b4b4b;
+    white-space: nowrap;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+  }
 }
 .link:hover {
   color: black;
