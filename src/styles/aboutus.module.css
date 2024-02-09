@@ -47,9 +47,17 @@
   border-top-color: #e6e6e6;
   border-bottom-color: #e6e6e6;
 }
-.section + .section {
-  margin-left: 2rem;
+/**Below 1024px, Aboutus **/
+@media (max-width: 1024px) {
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 }
+/* .section + .section {
+  margin-left: 2rem;
+} */
 .section__one {
   margin-right: 7.5rem;
 }

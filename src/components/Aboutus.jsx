@@ -51,6 +51,7 @@ const Aboutus = () => {
             </svg>
           </span>
         </div>
+
         <div className={styles.aboutus}>
           <section className={`${styles.section} ${styles.section__one}`}>
             <article className={styles.article}>
