@@ -9,7 +9,6 @@
   padding-right: 3rem;
   margin-left: 1rem;
   background-color: #f1f3f4;
-  border: 1px solid black;
 
   margin-bottom: 2rem;
   row-gap: 2rem;
@@ -21,7 +20,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid black;
 
     margin-top: 1rem;
     margin-bottom: 0rem;
@@ -30,19 +28,15 @@
   }
 }
 /**Below 1024px - Container**/
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .container {
     display: flex;
     flex-wrap: wrap;
     white-space: nowrap;
 
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
-    /* border: 1px solid black; */
-
     margin-top: 1rem;
     margin-bottom: 0rem;
-    /* margin-inline: 0.75rem 0.75rem; */
+    margin-inline: 0.75rem 0.75rem;
     gap: 2rem;
   }
 }
@@ -68,8 +62,7 @@
   font-size: 0.875rem;
   color: #4b4b4b;
   flex-wrap: wrap;
-  margin-right: 0;
-  border: 1px solid black;
+  margin-inline: auto 0;
 
   flex-grow: 0;
   flex-shrink: 1;
@@ -91,12 +84,13 @@
   margin-right: 2rem;
   flex-wrap: wrap;
 }
+.terms__items :nth-of-type(1) {
+  margin-left: 0rem;
+}
 .terms__links {
   margin-left: 1rem;
 }
-.terms__links + .terms__links {
-  /* margin-left: 2rem; */
-}
+
 /**Below 600px - list-items**/
 
 @media (max-width: 600px) {
@@ -105,42 +99,41 @@
     flex-direction: row;
 
     min-width: 100vw;
-    border: 2px solid brown;
-    /* white-space: nowrap; */
-    /* flex-wrap: wrap; */
     margin-left: 0.2rem;
     margin-bottom: 2rem;
-    /* align-items: flex-start; */
   }
   .terms__items {
     display: flex;
-
     flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-    row-gap: 0.5rem;
+    align-items: flex-start;
+    gap: 1rem;
     margin-right: 2rem;
   }
   .terms__links + .terms__links {
-    /* margin-left: 0rem; */
-    /* padding-top: 0.5rem; */
+    margin-left: 0rem;
   }
 }
 /**Below 1024px - list-items**/
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .terms__conditions {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-left: 0.2rem;
     align-items: flex-start;
+    min-width: 100vw;
   }
+  .terms__items {
+    row-gap: 0.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .terms__items :nth-of-type(1) {
+    margin-left: 0rem;
+  }
+
   .terms__links {
-    border: 1px solid greenyellow;
-  }
-  .terms__links + .terms__links {
-    margin-left: 1.5rem;
-    /* padding-top: 0.5rem; */
+    margin-left: 1rem;
   }
 }
 .terms__links:hover {
