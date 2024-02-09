@@ -1,12 +1,11 @@
 .header {
-  /* width: 100vw; */
+  width: 100vw;
   /* position: relative; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .main__container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   /* margin-bottom: 5rem; */
 }
 .sub__container {
@@ -55,13 +54,14 @@
 .search__box:focus {
   outline: none;
 }
-.svg__tag {
+.search__icon {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .signUp__account {
   display: flex;
   flex-direction: row;

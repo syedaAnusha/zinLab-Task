@@ -23,6 +23,7 @@ const NavBar = () => {
           <a href="/" className={styles.nav__link}>
             <li className={styles.nav__items}>Graphics</li>
           </a>
+          {/* For Dropdown menu */}
           <a href="/" className={styles.nav__link}>
             <li className={styles.nav__items}>Presentation Templates</li>
           </a>

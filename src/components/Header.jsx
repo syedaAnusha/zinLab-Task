@@ -27,7 +27,7 @@ const Header = () => {
                 id="searchField"
                 placeholder="Search for Movies, TV Shows, Themes & Cast"
               />
-              <div className={styles.svg__tag}>
+              <div className={styles.search__icon}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="26"
