@@ -23,23 +23,39 @@ const NavBar = () => {
           <a href="/" className={styles.nav__link}>
             <li className={styles.nav__items}>Graphics</li>
           </a>
-          {/* For Dropdown menu */}
-          <a href="/" className={styles.nav__link}>
+          <a
+            href="/"
+            target="blank"
+            className={`${styles.nav__link} ${styles.pT}`}
+          >
             <li className={styles.nav__items}>Presentation Templates</li>
           </a>
-          <a href="/" className={styles.nav__link}>
+          <a href="/" className={`${styles.nav__link} ${styles.phot}`}>
             <li className={styles.nav__items}>Photos</li>
           </a>
-          <a href="/" className={styles.nav__link}>
+          <a href="/" className={`${styles.nav__link} ${styles.fnts}`}>
             <li className={styles.nav__items}>Fonts</li>
           </a>
-          <a href="/" className={styles.nav__link}>
-            <li className={styles.nav__items}>Add-ons</li>
+          {/* For Dropdown menu */}
+          <section className={`${styles.dropdown} ${styles.section}`}>
+            <a href="/" className={styles.nav__link}>
+              <li className={styles.nav__items}>Presentation Templates</li>
+            </a>
+            <a href="/" className={styles.nav__link}>
+              <li className={styles.nav__items}>Photos</li>
+            </a>
+            <a href="/" className={styles.nav__link}>
+              <li className={styles.nav__items}>Fonts</li>
+            </a>
+          </section>
+          <a href="/" className={`${styles.nav__link}`}>
+            <li className={styles.nav__items}>More</li>
           </a>
         </ul>
+
         <ul className={styles.nav__list}>
           <a href="/" className={styles.nav__link}>
-            <li className={styles.nav__items}>More</li>
+            <li className={styles.nav__items}>Learn</li>
           </a>
         </ul>
       </div>

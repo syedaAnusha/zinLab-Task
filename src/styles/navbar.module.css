@@ -3,14 +3,18 @@
   margin-bottom: 0rem;
   /* border: 2px solid black; */
   padding: 0rem 2.2rem;
+  padding-right: 0rem;
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 .nav__list {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  /* border: 1px solid black; */
 
   font-size: 0.8rem;
   color: #484848;
@@ -21,8 +25,8 @@
   margin-left: -1.4rem;
   margin-right: 1rem;
 }
-.nav__items {
-}
+/* .nav__items {
+} */
 .nav__list,
 .nav__items,
 .nav__link {
@@ -35,4 +39,89 @@
 }
 .nav__link:hover {
   border-bottom-color: #523ee8;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .dropdown {
+    /* border: 1px solid purple; */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transform: translateX(var(--step-1));
+    height: auto;
+    background-color: white;
+    padding: 1rem 1rem;
+
+    border: 1px solid #ececee;
+    box-shadow: -2px 4px 8px -8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+  .pT {
+    display: none;
+  }
+  .phot {
+    display: none;
+  }
+  .fnts {
+    display: none;
+  }
+  .dropdown > a {
+    all: unset;
+  }
+  .dropdown > a > li {
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown > a > li:hover {
+    background-color: #ececee;
+  }
+}
+@media (min-width: 1044px) {
+  .pT {
+    display: block;
+    border-bottom: 2px solid transparent;
+  }
+  .pT:hover {
+    border-bottom-color: #523ee8;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    transform: translateX(calc(var(--step-1) - 0.4rem));
+  }
+  .dropdown > :nth-child(1) {
+    display: none;
+  }
+}
+@media (min-width: 1099px) {
+  .phot {
+    display: block;
+  }
+  .dropdown {
+    transform: translateX(calc(var(--step-1) - -1rem));
+  }
+  .dropdown > :nth-child(2) {
+    display: none;
+  }
+}
+@media (min-width: 1156px) {
+  .fnts {
+    display: block;
+  }
+  .dropdown {
+    visibility: hidden;
+  }
+  .dropdown > :nth-child(3) {
+    display: none;
+  }
 }
