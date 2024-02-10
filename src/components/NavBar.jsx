@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "@/styles/navbar.module.css";
 const NavBar = () => {
-  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(true);
 
   const toggleDropdown = () => {
-    const dropdown = document.querySelector(`.${styles.dropdown}`);
-    dropdown.style.visibility = dropdownVisible ? "visible" : "hidden";
     setDropdownVisible(!dropdownVisible);
+    const dropdown = document.querySelector(`.${styles.dropdown}`);
+    dropdown.style.visibility = dropdownVisible ? "visible" : "";
   };
   return (
     <>
