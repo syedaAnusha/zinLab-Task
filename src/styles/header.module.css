@@ -54,6 +54,12 @@
 .search__box:focus {
   outline: none;
 }
+@media (max-width: 1200px) {
+  .search__box {
+    font-size: 0.85rem;
+  }
+}
+
 .search__icon {
   display: flex;
   flex-direction: row;
@@ -94,7 +100,4 @@
 .signUp:hover {
   filter: brightness(0.8);
   transition: all 0.25s ease-in-out;
-}
-
-@media (max-width: 1024px) {
 }
