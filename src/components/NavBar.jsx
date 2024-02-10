@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/navbar.module.css";
 const NavBar = () => {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    const dropdown = document.querySelector(`.${styles.dropdown}`);
+    dropdown.style.visibility = dropdownVisible ? "visible" : "hidden";
+    setDropdownVisible(!dropdownVisible);
+  };
   return (
     <>
       <div className={styles.navbar}>
@@ -48,7 +55,7 @@ const NavBar = () => {
               <li className={styles.nav__items}>Fonts</li>
             </a>
           </section>
-          <a href="/" className={`${styles.nav__link}`}>
+          <a className={`${styles.nav__link}`} onClick={toggleDropdown}>
             <li className={styles.nav__items}>More</li>
           </a>
         </ul>

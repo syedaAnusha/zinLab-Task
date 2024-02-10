@@ -25,8 +25,7 @@
   margin-left: -1.4rem;
   margin-right: 1rem;
 }
-/* .nav__items {
-} */
+
 .nav__list,
 .nav__items,
 .nav__link {
@@ -97,6 +96,7 @@
     position: absolute;
     top: 100%;
     right: 0%;
+
     transform: translateX(calc(var(--step-1) - 0.4rem));
   }
   .dropdown > :nth-child(1) {
