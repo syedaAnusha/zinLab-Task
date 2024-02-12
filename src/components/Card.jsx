@@ -12,7 +12,7 @@ const Card = () => {
           className={styles.pdfToWord}
           width={70}
           height={70}
-          loading="lazy"
+          priority
         />
         <h2 className={styles.title}>PDF to Word</h2>
         <span className={styles.span}>
