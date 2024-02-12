@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  position: relative;
+  text-align: left;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+.title {
+  color: #121212;
+  white-space: nowrap;
+}
+.span {
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 0.875rem;
+  font-weight: 450;
+}

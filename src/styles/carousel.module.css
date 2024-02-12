@@ -1,5 +1,5 @@
 .main {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,28 @@
 .container {
   margin-bottom: 24px;
   border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
 }
 .heading2 {
   font-weight: 700;
   line-height: 36px;
+  width: fit-content;
   color: #121212;
   font-size: 1.875rem; /**1.875 x 16px = 30px**/
+}
+.carousel__container {
+  margin: 1.1rem 0.2rem;
+  display: flex;
+}
+.card__item {
+  min-width: 27%;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+.card__item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.card__item + .card__item {
+  margin-left: 1.5rem;
 }

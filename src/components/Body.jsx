@@ -1,12 +1,12 @@
 import React from "react";
-import Carousel from "./Carousel";
+import CustomCarousel from "./CustomCarousel";
 import styles from "@/styles/body.module.css";
 
 const Body = () => {
   return (
     <>
       <div className={styles.main}>
-        <Carousel />
+        <CustomCarousel />
       </div>
     </>
   );

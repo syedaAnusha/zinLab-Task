@@ -13,8 +13,7 @@ const ParentContainer = () => {
   return (
     <div className={styles.parent__container}>
       {width >= 1024 ? <AppBar /> : <AppBarMobile />}
-      //**Body component contains all the main body section that includes
-      //**carousel, bookmarks */
+      {/* Body component contains all the main body section that includes carousel, bookmarks  */}
       <Body />
       <Aboutus />
       <Footer />
