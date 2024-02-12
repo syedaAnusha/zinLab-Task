@@ -13,7 +13,7 @@ const Footer = () => {
             className={styles.zintoolsLogo}
             width={25}
             height={25}
-            priority
+            loading="lazy"
           />
           <h1 className={styles.title}>ZinTools</h1>
         </section>

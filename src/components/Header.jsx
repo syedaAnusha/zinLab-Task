@@ -15,7 +15,7 @@ const Header = () => {
                 className={styles.zintoolsLogo}
                 width={15}
                 height={15}
-                priority
+                loading="lazy"
               />
               <h1 className={styles.title}>ZinTools</h1>
             </section>
