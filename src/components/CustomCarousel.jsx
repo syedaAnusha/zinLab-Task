@@ -8,9 +8,9 @@ import LeftArrow from "./carousel components/LeftArrow";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 1400, min: 749 },
+    breakpoint: { max: 2000, min: 749 },
     items: 4,
-    slidesToSlide: 1,
+    slidesToSlide: 4,
   },
   tablet: {
     breakpoint: { max: 748, min: 601 },
@@ -30,13 +30,21 @@ const CustomCarousel = () => {
 
           <Carousel
             responsive={responsive}
+            swipeable={true}
             centerMode={true}
             arrows={true}
-            // renderArrowsWhenDisabled={true}
-            customLeftArrow={<LeftArrow />}
+            renderArrowsWhenDisabled={true}
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}
           >
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
             <Card />
             <Card />
             <Card />

@@ -7,6 +7,14 @@ const Card = () => {
     <>
       <div className={styles.main}>
         <Image
+          src="/icons/bookmark.svg"
+          alt="Bookmark icon"
+          className={styles.bookmark}
+          width={20}
+          height={20}
+          priority
+        />
+        <Image
           src="/images/pdf-word.svg"
           alt="pdf to word"
           className={styles.pdfToWord}

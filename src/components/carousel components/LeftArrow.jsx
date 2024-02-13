@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/styles/custom carousel styles/customLeftArrow.module.css";
 
-const LeftArrow = () => {
+const LeftArrow = ({ onClick }) => {
   return (
     <>
       <div className={styles.main}>
@@ -13,6 +13,7 @@ const LeftArrow = () => {
           width={70}
           height={70}
           priority
+          onClick={() => onClick()}
         />
       </div>
     </>
