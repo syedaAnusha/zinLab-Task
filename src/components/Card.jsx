@@ -17,7 +17,7 @@ const Card = ({ src, alt, title, description }) => {
         <Image
           src={src}
           alt={alt}
-          className={styles.pdfToWord}
+          className={styles.pdf}
           width={65}
           height={65}
           priority

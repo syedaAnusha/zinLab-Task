@@ -26,7 +26,8 @@
   display: flex;
 }
 .card__item {
-  min-width: 9%;
+  min-width: 10%;
+
   margin-bottom: 1rem;
   transition: all 0.3s;
   padding: 24px;
