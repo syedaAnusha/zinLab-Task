@@ -17,7 +17,7 @@ const Card = () => {
         <Image
           src="/images/pdf-word.svg"
           alt="pdf to word"
-          className={styles.pdfToWord}
+          className={styles.pdf}
           width={70}
           height={70}
           priority
