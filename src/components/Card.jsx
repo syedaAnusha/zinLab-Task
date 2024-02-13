@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/styles/card.module.css";
 
-const Card = () => {
+const Card = ({ src, alt, title, description }) => {
   return (
     <>
       <div className={styles.main}>
@@ -15,17 +15,15 @@ const Card = () => {
           priority
         />
         <Image
-          src="/images/pdf-word.svg"
-          alt="pdf to word"
-          className={styles.pdf}
-          width={70}
-          height={70}
+          src={src}
+          alt={alt}
+          className={styles.pdfToWord}
+          width={65}
+          height={65}
           priority
         />
-        <h2 className={styles.title}>PDF to Word</h2>
-        <span className={styles.span}>
-          Easily convert PDF to Word document.
-        </span>
+        <h2 className={styles.title}>{title}</h2>
+        <span className={styles.span}>{description}</span>
       </div>
     </>
   );

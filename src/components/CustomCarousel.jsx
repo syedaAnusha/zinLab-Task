@@ -4,12 +4,13 @@ import styles from "@/styles/carousel.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "./Card";
-import LeftArrow from "./carousel components/LeftArrow";
+import { card } from "./index";
+// import LeftArrow from "./carousel components/LeftArrow";
 
 const responsive = {
   desktop: {
     breakpoint: { max: 2000, min: 749 },
-    items: 4,
+    items: 3,
     slidesToSlide: 4,
   },
   tablet: {
@@ -37,18 +38,15 @@ const CustomCarousel = () => {
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}
           >
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {card.map((item, index) => (
+              <Card
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </Carousel>
         </div>
       </div>
