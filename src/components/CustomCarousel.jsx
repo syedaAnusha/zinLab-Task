@@ -11,7 +11,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 2000, min: 749 },
     items: 3,
-    slidesToSlide: 2,
+    slidesToSlide: 4,
   },
   tablet: {
     breakpoint: { max: 748, min: 601 },
@@ -31,9 +31,9 @@ const CustomCarousel = () => {
 
           <Carousel
             responsive={responsive}
-            swipeable
-            centerMode={false}
-            arrows
+            swipeable={true}
+            centerMode={true}
+            arrows={true}
             renderArrowsWhenDisabled={true}
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}

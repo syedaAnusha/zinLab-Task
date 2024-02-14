@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* margin: 0.2rem 0.2rem; */
+  margin: 0.2rem 0.2rem;
 }
 
 .container {
@@ -26,7 +26,7 @@
   display: flex;
 }
 .card__item {
-  /* min-width: 10%; */
+  min-width: 10%;
 
   margin-bottom: 1rem;
   transition: all 0.3s;
