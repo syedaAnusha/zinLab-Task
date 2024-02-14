@@ -3,23 +3,26 @@ import styles from "@/styles/carousel.module.css";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import Card from "./Card";
 import { card } from "./index";
-// import LeftArrow from "./carousel components/LeftArrow";
+import CustomButtonArrowGroup from "./carousel components/CustomButtonArrowGroup";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 2000, min: 749 },
+    breakpoint: { max: 2000, min: 769 },
     items: 3,
-    slidesToSlide: 4,
+    slidesToSlide: 1,
   },
   tablet: {
-    breakpoint: { max: 748, min: 601 },
+    breakpoint: { max: 768, min: 601 },
     items: 2,
+    slidesToSlide: 1,
   },
   mobile: {
     breakpoint: { max: 600, min: 0 },
     items: 1,
+    slidesToSlide: 0,
   },
 };
 const CustomCarousel = () => {
@@ -31,9 +34,9 @@ const CustomCarousel = () => {
 
           <Carousel
             responsive={responsive}
-            swipeable
             centerMode={false}
             arrows
+            customButtonGroup={<CustomButtonArrowGroup />}
             renderArrowsWhenDisabled={true}
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}
