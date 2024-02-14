@@ -12,7 +12,8 @@ const responsive = {
   desktop: {
     breakpoint: { max: 2000, min: 769 },
     items: 3,
-    slidesToSlide: 1,
+    // slidesToSlide: 1,
+    // partialVisibilityGutter: 40,
   },
   tablet: {
     breakpoint: { max: 768, min: 601 },
@@ -33,11 +34,13 @@ const CustomCarousel = () => {
           <h2 className={styles.heading2}>Convert from PDF</h2>
 
           <Carousel
+            additionalTransfrom={0}
             responsive={responsive}
             centerMode={false}
-            arrows
+            arrows={false}
+            slidesToSlide={2}
+            shouldResetAutoplay={true}
             customButtonGroup={<CustomButtonArrowGroup />}
-            renderArrowsWhenDisabled={true}
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}
           >
