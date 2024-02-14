@@ -31,9 +31,9 @@ const CustomCarousel = () => {
 
           <Carousel
             responsive={responsive}
-            swipeable={true}
-            centerMode={true}
-            arrows={true}
+            swipeable
+            centerMode={false}
+            arrows
             renderArrowsWhenDisabled={true}
             containerClass={styles.carousel__container}
             itemClass={styles.card__item}
