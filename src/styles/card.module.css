@@ -14,9 +14,12 @@
 .bookmark {
   margin: auto 0;
   margin-left: auto;
+  fill: lightslategrey;
+  fill-opacity: 0.4;
 }
 .bookmark:hover {
-  filter: purple;
+  fill: #333;
+  fill-opacity: 1;
 }
 .pdf {
   margin-top: -1rem;

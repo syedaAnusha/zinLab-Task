@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { FaRegBookmark } from "react-icons/fa";
+import { GoBookmarkFill } from "react-icons/go";
 import styles from "@/styles/card.module.css";
+import { Unbounded } from "next/font/google";
 
 const Card = ({ src, alt, title, description }) => {
   return (
     <>
       <div className={styles.main}>
         <span className={styles.bookmark}>
-          <FaRegBookmark />
+          <GoBookmarkFill className={styles.bookmark} size={20} />
         </span>
         <Image
           src={src}
