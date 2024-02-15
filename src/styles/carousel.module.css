@@ -9,7 +9,7 @@
 
 .container {
   /* margin-bottom: 24px; */
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   display: flex;
   width: 100%;
   flex-direction: column;
