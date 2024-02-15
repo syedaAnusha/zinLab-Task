@@ -77,3 +77,53 @@ export const card = [
       "Convert your scanned PDFs and images into editable Word, Excel, and PPT.",
   },
 ];
+
+export const card2 = [
+  {
+    src: "/images/pdf-word.svg",
+    alt: "word to pdf",
+    title: "Word to PDF",
+    description: "The best Word to PDF converter online.",
+  },
+  {
+    src: "/images/PDF-PPT.svg",
+    alt: "ppt to pdf",
+    title: "PPT to PDF",
+    description: "Convert Powerpoint to PDF online.",
+  },
+
+  {
+    src: "/images/PDF-excel.svg",
+    alt: "Excel to pdf",
+    title: "Excel to PDF",
+    description: "Easily Convert Excel spreadsheet to PDF.",
+  },
+
+  {
+    src: "/images/PDF-JPG.svg",
+    alt: "jpg to pdf",
+    title: "JPG to PDF",
+    description: "Convert JPG,PNG, BMP, GIF and TIFF images to PDF.",
+  },
+
+  {
+    src: "/images/PDF-TXT.svg",
+    alt: "text to pdf",
+    title: "TXT to PDF",
+    description: "Convert TXT to PDF online for free.",
+  },
+
+  {
+    src: "/images/PDF-RTX.svg",
+    alt: "rtf to pdf",
+    title: "RTF to PDF",
+    description: "Convert RTF file to PDF online for free.",
+  },
+
+  {
+    src: "/images/PDF-EPUB.svg",
+    alt: "pub to pdf",
+    title: "PUB to PDF",
+    description: "Convert Publisher to PDF document.",
+  },
+];

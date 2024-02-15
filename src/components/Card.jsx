@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { GoBookmarkFill } from "react-icons/go";
 import styles from "@/styles/card.module.css";
-import { Unbounded } from "next/font/google";
 
 const Card = ({ src, alt, title, description }) => {
   return (

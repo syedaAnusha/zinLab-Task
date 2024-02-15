@@ -1,14 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  /* gap: 0.4rem; */
   position: relative;
   text-align: left;
   cursor: pointer;
-  /* border: 1px solid orange; */
 
+  /* gap: 0.4rem; */
+  /* border: 1px solid orange; */
   /* white-space: nowrap; */
-  word-break: unset;
+  /* word-break: unset; */
 }
 
 .bookmark {
@@ -24,10 +24,33 @@
 .pdf {
   margin-top: -1rem;
 }
+.pdf2 {
+  margin-top: -1rem;
+}
+
 .title {
   color: #121212;
   white-space: nowrap;
   margin-top: 0.6rem;
+}
+.title2 {
+  color: #121212;
+  white-space: nowrap;
+  margin-top: 0.6rem;
+}
+@media (max-width: 600px) {
+  .title2 {
+    margin-top: -0.3rem;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    width: fit-content;
+    /* border: 1px solid black; */
+  }
+  .pdf2 {
+    width: 32px;
+    margin-top: -1rem;
+  }
 }
 .span {
   color: rgba(60, 60, 67, 0.6);
@@ -40,4 +63,86 @@
   /* text-overflow: ellipsis; */
   /* overflow: hidden; */
   /* white-space: nowrap; */
+}
+.card__item {
+  /* margin-bottom: 1rem; */
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  padding: 24px;
+
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  /* white-space: wrap; */
+}
+.card__item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+  .card__item {
+    padding: 12px;
+    min-width: 110%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card__item {
+    padding: 12px;
+    min-width: 120%;
+  }
+}
+.span2 {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  flex-direction: row;
+  -ms-flex-direction: column;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(60, 60, 67, 0.6);
+  /* width: 110%; */
+}
+.overflow__hidden {
+  overflow: hidden !important;
+}
+@media (max-width: 1024px) {
+  .span2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .span2 {
+    text-overflow: unset;
+    font-size: 12px;
+    white-space: wrap;
+    margin-top: 5px;
+  }
+  .overflow__hidden {
+    overflow: unset;
+  }
+}
+@media (max-width: 600px) {
+  .span2 {
+    text-overflow: unset;
+    font-size: 12px;
+    white-space: wrap;
+    margin-top: 5px;
+  }
+  .overflow__hidden {
+    overflow: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .span2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+  }
 }
