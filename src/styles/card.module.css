@@ -10,16 +10,8 @@
   /* white-space: nowrap; */
   /* word-break: unset; */
 }
-
-.bookmark {
-  margin: auto 0;
+.span {
   margin-left: auto;
-  fill: lightslategrey;
-  fill-opacity: 0.4;
-}
-.bookmark:hover {
-  fill: #333;
-  fill-opacity: 1;
 }
 .pdf {
   margin-top: -1rem;
