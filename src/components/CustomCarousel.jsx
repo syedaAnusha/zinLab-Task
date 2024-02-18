@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "@/styles/carousel.module.css";
 
 import Carousel from "react-multi-carousel";
@@ -7,8 +6,6 @@ import "react-multi-carousel/lib/styles.css";
 import Card from "./Card";
 import { card } from "./index";
 import CustomButtonArrowGroup from "./carousel components/CustomButtonArrowGroup";
-
-import { v4 as uuidv4 } from "uuid";
 
 const responsive = {
   desktop: {
@@ -29,7 +26,6 @@ const responsive = {
   },
 };
 const CustomCarousel = () => {
-  const [items, setItems] = useState([]);
   return (
     <>
       <div className={styles.main}>

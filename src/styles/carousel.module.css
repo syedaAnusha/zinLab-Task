@@ -21,6 +21,14 @@
   color: #121212;
   font-size: 1.875rem; /**1.875 x 16px = 30px**/
 }
+@media (max-width: 600px) {
+  .heading2 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
 .carousel__container {
   margin: 2rem 0.2rem;
   /* border: 1px solid yellowgreen; */

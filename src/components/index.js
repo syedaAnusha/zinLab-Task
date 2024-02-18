@@ -127,3 +127,54 @@ export const card2 = [
     description: "Convert Publisher to PDF document.",
   },
 ];
+
+export const card3 = [
+  {
+    src: "/bookmarks/editPDF.svg",
+    alt: "edit pdf",
+    title: "Edit PDF",
+    description: "Use the best online tool to edit PDFs in your browser.",
+  },
+  {
+    src: "/bookmarks/Crop-PDF.svg",
+    alt: "crop pdf",
+    title: "Crop PDF",
+    description:
+      "Crop PDF online to a selected area, adjust margin size swiftly.",
+  },
+
+  {
+    src: "/bookmarks/replace-text-pdf.svg",
+    alt: "replace text",
+    title: "Replace Text",
+    description: "The easiest way to replace text online.",
+  },
+
+  {
+    src: "/bookmarks/Rotate-PDF.svg",
+    alt: "rotate pdf",
+    title: "Rotate PDF",
+    description: "Rotate and save your PDF pages online for free.",
+  },
+
+  {
+    src: "/bookmarks/merge-pdf.svg",
+    alt: "merge pdf",
+    title: "Merge PDF",
+    description: "The easiest way to combine PDF Files.",
+  },
+
+  {
+    src: "/bookmarks/compress-pdf.svg",
+    alt: "compress pdf",
+    title: "Compress PDF",
+    description: "The easiest way to reduce PDF size online.",
+  },
+
+  {
+    src: "/bookmarks/Split-PDF.svg",
+    alt: "split pdf",
+    title: "Split PDF",
+    description: "Split a PDF into multiple PDF Files by page range.",
+  },
+];
