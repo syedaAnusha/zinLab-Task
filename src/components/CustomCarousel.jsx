@@ -33,7 +33,6 @@ const CustomCarousel = () => {
           <h2 className={styles.heading2}>Convert from PDF</h2>
 
           <Carousel
-            additionalTransfrom={0}
             responsive={responsive}
             centerMode={false}
             arrows={false}

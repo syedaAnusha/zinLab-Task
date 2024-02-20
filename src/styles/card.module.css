@@ -1,16 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
-  position: relative;
   text-align: left;
   cursor: pointer;
-  padding-inline: 1rem 1rem;
-  /* gap: 0.4rem; */
-  /* border: 1px solid orange; */
-  /* white-space: nowrap; */
-  /* word-break: unset; */
+
+  /* padding-inline: 1rem 1rem; */
 }
-.span {
+.iconSpan {
   margin-left: auto;
 }
 .pdf {
@@ -45,17 +41,16 @@
   }
 }
 .span {
-  color: rgba(60, 60, 67, 0.6);
-  font-size: 0.875rem;
-  font-weight: 450;
-  margin-top: 0.7rem;
-  /* width: 50ch; */
-  /* word-break: break-all; */
-
-  /* text-overflow: ellipsis; */
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
+  color: rgba(60, 60, 67, 0.6) !important;
+  font-size: 0.875rem !important;
+  font-weight: 450 !important;
+  margin-top: 0.7rem !important;
+  width: 80% !important;
+  white-space: pre-wrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
+
 .span2 {
   color: rgba(60, 60, 67, 0.6);
   font-size: 0.875rem;

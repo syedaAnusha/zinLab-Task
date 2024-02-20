@@ -13,7 +13,7 @@ const Card = ({ src, alt, title, description }) => {
   return (
     <>
       <div className={styles.main}>
-        <span className={styles.span}>
+        <span className={styles.iconSpan}>
           <GoBookmarkFill
             className={styles.bookmark}
             size={20}
